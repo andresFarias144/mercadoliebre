@@ -1,0 +1,431 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    background-color: #ebebeb;
+    color: rgb(38, 37, 37);
+
+}
+
+.campos-grandes{
+    width: 100%;
+    height: 30px;
+}
+
+p{
+    font-size: 12px;
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 400;
+    padding: 10px;
+    text-align-last: left;
+}
+
+h4{
+    font-weight: 500;
+    font-size: 20px;
+    display: none;
+}
+
+.banner{
+    width: 100%;
+    text-align: center;
+}
+.precios{
+    font-size:  22px;
+    font-weight: 500;
+    width: 30%;
+}
+
+.descuentos{
+    font-size: 14px;
+    color: #39b54a;
+    font-weight: 500;
+    width: 70%;
+}
+
+/* ------ HEADER ------ */
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    z-index: 2;
+}
+
+.logo{
+    width: 120px;
+    margin-right: 20px;
+}
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+    font-size: 15px;
+}
+
+.hamburger-button{
+    background-color: #1259c3;
+    color: white;
+    display: block;
+    width: 50px;
+    padding: 15px 0px 15px 0px;
+    border-radius:8px;
+    text-align: center;
+    font-style: 18px;
+    margin:auto;
+}
+
+.main-navbar{
+    display: none;
+}
+
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-navbar a {
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0 5px 0px;
+    font-style: 17px;
+}
+
+
+
+.lupita{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    height: 25px;
+    display: inline;
+}
+
+ 
+
+.campo{
+    border: none;
+    width: 80%;
+    
+}
+
+.logoybuscador{
+    display: flex;
+    justify-content:space-between; 
+   /*  justify-content: space-around; */
+    align-items: center;
+}
+
+
+/* BANNER */
+
+.banner1{
+    width: 100%;
+}
+
+/* MAIN */
+
+main{
+    width: 90vw;
+    background-color: #ebebeb;
+    margin-left: 5vw;
+}
+
+
+.articulo{
+    margin-bottom: 10px;
+    background-color: white;
+    margin: 15px;
+}
+
+.detalles-articulo{
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.preciosydescuentos{
+    display: flex;
+    align-items: center;
+
+}
+
+
+.detalles-articulo i{
+    display: block;
+    font-size: 22px;
+    padding: 5px;
+    width: 26px;
+    height: 26px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    color: #39b54a;
+     
+
+}
+
+
+footer section{
+    background-color: white;
+    padding: 40px;
+    text-align: center;
+
+}
+
+footer section i{
+     color: #1259c3;
+     font-size: 2em;
+}
+
+footer section h3 {
+    font-size: 18px;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+
+
+.form-registro{
+    width: 100%;
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 50px;
+    border-radius: 30px;
+    margin: 50px auto 50px auto;
+}
+
+/** Animación Camioncito ***/
+
+.articulo i{
+    transition: 450ms;
+}
+
+.articulo:hover i{
+    transform: rotate(-90deg);
+}
+
+/* ------------------------------------------------------- */
+
+.boton-entrar:hover{
+    background-color: #0022AA;
+    color:white;
+}
+
+.elementos-footer:hover i{
+    color:#3fbbf0;
+}
+
+.caja-borrar-enviar{
+    width: 100%;
+    text-align: right;
+}
+
+/*************** MEDIA QUERIES *******************/
+
+
+
+/****** MEDIA QUERIES TABLETS ****/
+
+@media(min-width: 361px) {
+
+    h4{
+        font-weight: 500;
+        font-size: 20px;
+        display:block;
+        
+    }
+
+    .logo{
+        width: 150px;
+        margin-right: 20px;
+    }
+
+    .articulo:hover h4{
+        display: block;
+        
+    }
+
+    .desc-prod{
+        opacity: 0;
+        transition: all 500ms;
+    }
+
+    .articulo:hover .desc-prod{
+        opacity: 1;
+    }
+    
+
+   .contenidos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+   }
+
+    article{
+        padding: 0px;
+        margin: 0px;
+        width: 43%;
+        transition: all 500ms;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .siteylogin{
+        display: block
+    }
+
+    .burger-menu{
+        display: none;
+    }
+
+
+    .form-registro{
+        width: 80%;
+        background-color: #ffffff;
+        margin: auto;
+        padding: 20px;
+        padding-bottom: 50px;
+        border-radius: 30px;
+        margin: 20px auto 20px auto;
+    }
+    
+
+} 
+
+
+
+
+/****** MEDIA QUERIES DESKTOP ****/
+
+
+@media(min-width: 769px){
+    h4{
+        font-weight: 500;
+        font-size: 20px;
+        display: block;
+        transition: all 500ms;
+    }
+    .contenidos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        
+    article{
+        transition: all 500ms;
+        width: 22%;
+    }
+
+    footer section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .campo{
+        border: none;
+        width: auto;
+    }
+
+    .elementos-footer{
+        background-color: white;
+        padding: 40px;
+        text-align: center;
+        width: 25%;
+    }
+
+    .copyright{
+        width: 100%;
+        text-align: center;
+        background-color: white;
+    }
+
+    .siteylogin{
+        display: block
+    }
+    
+    .burger-menu{
+        display: none;
+    }
+
+    .articulo:hover h4{
+        display: block;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .form-registro{
+        width: 30%;
+        background-color: #ffffff;
+        margin: auto;
+        padding: 20px;
+        padding-bottom: 50px;
+        border-radius: 30px;
+        margin: 50px auto 50px auto;
+    }
+
+    .main-header-top-bar{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        align-items: center;
+
+    }
+
+    .logoybuscador{
+        display: flex;
+        align-items: center;
+        width: 60%;
+    }
+
+    
+    .copy-header{
+        max-width: 350px;
+        text-align: right;
+        font-size: 17px;
+    }
+
+    .hamburger-button{
+        display: none;
+    }
+
+    .main-navbar{
+      
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-navbar ul{
+        display: flex;
+    }
+
+    .main-navbar li{
+        margin: 0px 5px 0px 5px;
+    }
+
+    article:hover{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+
+    .logo{
+        width: 200px;
+    }
+
+}
+
+
